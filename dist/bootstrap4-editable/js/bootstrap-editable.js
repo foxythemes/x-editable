@@ -4497,7 +4497,7 @@ $(function(){
             this.$input.combodate(this.options.combodate);
                     
             if($.fn.editableform.engine === 'bs3') {
-                this.$input.siblings().find('select').addClass('form-control');
+                this.$input.siblings().find('select').addClass('form-control form-control-sm');
             }
             
             if(this.options.inputclass) {
@@ -4652,7 +4652,7 @@ Editableform based on Twitter Bootstrap 3
             //bs3 add `form-control` class to standard inputs
             var stdtypes = 'text,select,textarea,password,email,url,tel,number,range,time,typeaheadjs'.split(','); 
             if(~$.inArray(this.input.type, stdtypes)) {
-                this.input.$input.addClass('form-control');
+                this.input.$input.addClass('form-control form-control-sm');
                 if(emptyInputClass) {
                     this.input.options.inputclass = defaultClass;
                     this.input.$input.addClass(defaultClass);
