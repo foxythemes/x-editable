@@ -4645,9 +4645,9 @@ Editableform based on Twitter Bootstrap 3
         initInput: function() {  
             pInitInput.apply(this);
 
-            //for bs3 set default class `input-sm` to standard inputs
+            //for bs4 set default class `form-control-sm` to standard inputs
             var emptyInputClass = this.input.options.inputclass === null || this.input.options.inputclass === false;
-            var defaultClass = 'input-sm';
+            var defaultClass = 'form-control-sm';
             
             //bs3 add `form-control` class to standard inputs
             var stdtypes = 'text,select,textarea,password,email,url,tel,number,range,time,typeaheadjs'.split(','); 
@@ -4665,11 +4665,11 @@ Editableform based on Twitter Bootstrap 3
             for(var i=0; i<classes.length; i++) {
                 // `btn-sm` is default now
                 /*
-                if(classes[i].toLowerCase() === 'input-sm') { 
+                if(classes[i].toLowerCase() === 'form-control-sm') { 
                     $btn.find('button').addClass('btn-sm');  
                 }
                 */
-                if(classes[i].toLowerCase() === 'input-lg') {
+                if(classes[i].toLowerCase() === 'form-control-lg') {
                     $btn.find('button').removeClass('btn-sm').addClass('btn-lg'); 
                 }
             }
